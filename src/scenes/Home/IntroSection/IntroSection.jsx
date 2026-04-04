@@ -1,65 +1,112 @@
 import { AiFillGithub } from '@react-icons/all-files/ai/AiFillGithub';
-import { FaFacebookSquare } from '@react-icons/all-files/fa/FaFacebookSquare';
 import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn';
-import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram';
+import { CgFileDocument } from '@react-icons/all-files/cg/CgFileDocument';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Tilt from 'react-parallax-tilt';
 import avatar from '../../../assets/avatar.svg';
 import s from './IntroSection.module.scss';
+
+const proofPoints = [
+  {
+    value: 'Production ready',
+    label:
+      'Building React Native and React features at SiteMaster since Feb 2024.',
+  },
+  {
+    value: 'Real-time UX',
+    label:
+      'Notifications, messaging, deep linking, and background event handling.',
+  },
+  {
+    value: 'Payments',
+    label:
+      'Experience with Razorpay, Stripe, RevenueCat, and subscription flows.',
+  },
+];
+
+const capabilities = [
+  {
+    title: 'Mobile product delivery',
+    description:
+      'Cross-platform React Native and Expo apps with thoughtful UX, device integrations, and smooth state-heavy flows.',
+  },
+  {
+    title: 'Frontend performance',
+    description:
+      'React applications that stay fast under real-world data loads, with clean architecture and maintainable components.',
+  },
+  {
+    title: 'Backend integration',
+    description:
+      'API design, payment integrations, real-time services, and AI-assisted workflows connected into usable products.',
+  },
+];
 
 const IntroSection = () => {
   return (
     <section className={s.content}>
       <div className={s.introduction}>
         <div className={s.introductionText}>
+          {/* <p className={s.eyebrow}>Why teams hire me</p> */}
           <h1 className={s.title}>
-            LET ME <span className={s.purple}> INTRODUCE </span>{' '}
-            MYSELF
+            I turn ambitious ideas into dependable
+            <span className={s.purple}> product experiences</span>.
           </h1>
 
           <div className={s.description}>
             <p>
-              I’m a <b>
-                full-stack developer{' '}
-              </b>
-              specializing in the <b>MERN</b> stack with <br />
-              a passion for building innovative web and mobile applications.<br />
+              I&apos;m a <b>software engineer</b> focused on mobile
+              and web product development, currently working at
+              <b> SiteMaster</b> across React Native and React
+              features for real-time project updates, approvals, and
+              operational workflows.
             </p>
 
             <p>
-              My Skills include{' '}
-              <i>
-                <b className={s.purple}>
-                  Javascript, React, React Native, Node.js,<br />
-                  Express.js{" "}
-                </b>
-              </i>
-              and other relevant web technologies. I have
-              <br />
-              experience in integrating various third-party libraries,
-              <br />
-              API integration, push notifications and analytics.
+              I do my best work when a team needs someone who can move
+              between{' '}
+              <b>
+                frontend execution, backend integration, and product
+                thinking
+              </b>{' '}
+              without losing attention to performance, polish, or
+              delivery speed.
             </p>
+          </div>
 
-            <p>
-              My field of Interest's are building new
-              <i>
-                <b className={s.purple}> Technologies and Products</b>
-              </i>
-            </p>
+          <div className={s.proofGrid}>
+            {proofPoints.map((point) => (
+              <article key={point.value} className={s.proofCard}>
+                <span className={s.proofValue}>{point.value}</span>
+                <p className={s.proofLabel}>{point.label}</p>
+              </article>
+            ))}
           </div>
         </div>
 
-        <Tilt trackOnWindow={true}>
-          <LazyLoadImage alt="avatar" effect="blur" src={avatar} />
+        <Tilt trackOnWindow={true} className={s.avatarCard}>
+          <LazyLoadImage
+            alt="Illustrated portrait of Apratim Dutta"
+            effect="blur"
+            src={avatar}
+          />
         </Tilt>
       </div>
 
+      <div className={s.capabilities}>
+        {capabilities.map((item) => (
+          <article key={item.title} className={s.capabilityCard}>
+            <h2 className={s.capabilityTitle}>{item.title}</h2>
+            <p>{item.description}</p>
+          </article>
+        ))}
+      </div>
+
       <div className={s.introSocial}>
-        <h1>FIND ME ON</h1>
+        <h2>Professional Links</h2>
         <p>
-          Feel free to <span className={s.purple}>connect </span>with
-          me
+          Open-source work, latest resume, and a direct line to
+          connect.
         </p>
         <ul className={s.socialLinks}>
           <li className={s.socialLink}>
@@ -75,29 +122,7 @@ const IntroSection = () => {
           </li>
           <li className={s.socialLink}>
             <a
-              href="https://www.facebook.com/apru2002/"
-              target="_blank"
-              rel="noreferrer"
-              className={s.socialIcon}
-              aria-label="facebook"
-            >
-              <FaFacebookSquare />
-            </a>
-          </li>
-          <li className={s.socialLink}>
-            <a
-              href="https://www.instagram.com/apru_02/"
-              target="_blank"
-              rel="noreferrer"
-              className={s.socialIcon}
-              aria-label="instagram"
-            >
-              <FaInstagram />
-            </a>
-          </li>
-          <li className={s.socialLink}>
-            <a
-              href="https://www.linkedin.com/in/apratim-dutta/"
+              href="https://www.linkedin.com/in/apru02/"
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
@@ -106,7 +131,24 @@ const IntroSection = () => {
               <FaLinkedinIn />
             </a>
           </li>
+          <li className={s.socialLink}>
+            <a
+              href="/resume/Apratim-Dutta-Resume-2026.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className={s.socialIcon}
+              aria-label="resume"
+            >
+              <CgFileDocument />
+            </a>
+          </li>
         </ul>
+        <a
+          className={s.contactLink}
+          href="mailto:duttaapratim11@gmail.com"
+        >
+          duttaapratim11@gmail.com
+        </a>
       </div>
     </section>
   );

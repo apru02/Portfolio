@@ -6,13 +6,18 @@ const AboutTextCard = () => {
       <p style={{ textAlign: 'justify' }}>
         Hi Everyone, I am{' '}
         <span className={s.purple}>Apratim Dutta, </span>
-        <br />a software developer currently based in{' '}
+        <br />a software engineer currently based in{' '}
         <span className={s.purple}>Kolkata, India.</span>
         <br />
         <br />
-        I am currently pursuing a Bachelor's degree in Information
+        I graduated with a Bachelor&apos;s degree in Information
+        Technology from IIEST Shibpur and currently work at
+        SiteMaster.
         <br />
-        Technology and from IIEST Shibpur.
+        <br />
+        My core focus is building high-quality mobile and web products
+        with React Native, React, and backend integrations that support
+        real users and real workflows.
         <br />
         <br />
         My hobbies beyond programming:
@@ -26,7 +31,7 @@ const AboutTextCard = () => {
           - Cricket
         </li>
         <li className={s.aboutActivity}>
-          - Blogging
+          - Exploring product ideas
         </li>
       </ul>
     </div>

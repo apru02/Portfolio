@@ -36,6 +36,10 @@
   padding: 1rem 0;
 }
 
+.pdfPage + .pdfPage {
+  margin-top: 1.5rem;
+}
+
 .downloadText {
   margin-left: 8px;
   text-transform: uppercase;

@@ -41,7 +41,9 @@ const Modal = ({ children, show, onClose }) => {
             </button>
           </div>
 
-          {children}
+          <div className={s.body}>
+            {children}
+          </div>
         </div>
       </CSSTransition>
     </div>

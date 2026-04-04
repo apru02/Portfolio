@@ -1,0 +1,16 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#0D1120"/>
+  <circle cx="1048" cy="144" r="176" fill="#F97316" fill-opacity="0.28"/>
+  <circle cx="894" cy="582" r="232" fill="#2563EB" fill-opacity="0.14"/>
+  <circle cx="1088" cy="614" r="118" fill="#A855F7" fill-opacity="0.14"/>
+  <rect x="74" y="74" width="282" height="42" rx="21" fill="#171E31" stroke="#FB923C" stroke-opacity="0.65"/>
+  <text x="107" y="101" fill="#FFEDD5" font-size="18" font-weight="700" font-family="Quicksand, Arial, sans-serif">Data and ML Project</text>
+  <text x="74" y="220" fill="#F8FAFC" font-size="62" font-weight="700" font-family="Quicksand, Arial, sans-serif">Predictive Crime</text>
+  <text x="74" y="292" fill="#FDBA74" font-size="62" font-weight="700" font-family="Quicksand, Arial, sans-serif">Analysis</text>
+  <text x="74" y="364" fill="#E2E8F0" font-size="28" font-weight="500" font-family="Quicksand, Arial, sans-serif">500k+ records, Power BI dashboards,</text>
+  <text x="74" y="406" fill="#E2E8F0" font-size="28" font-weight="500" font-family="Quicksand, Arial, sans-serif">and machine learning for risk forecasting.</text>
+  <rect x="74" y="486" width="150" height="52" rx="26" fill="#1D2438" stroke="#FB923C" stroke-opacity="0.45"/>
+  <text x="111" y="519" fill="#FFF7ED" font-size="22" font-weight="700" font-family="Quicksand, Arial, sans-serif">500k+</text>
+  <rect x="242" y="486" width="172" height="52" rx="26" fill="#1D2438" stroke="#60A5FA" stroke-opacity="0.45"/>
+  <text x="282" y="519" fill="#DBEAFE" font-size="22" font-weight="700" font-family="Quicksand, Arial, sans-serif">15+ insights</text>
+</svg>

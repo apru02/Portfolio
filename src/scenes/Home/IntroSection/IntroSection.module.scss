@@ -1,56 +1,124 @@
 .content {
   position: relative;
-  padding: 4rem 3rem;
+  padding: 2rem 3rem 6rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  gap: 2.5rem;
 }
 
 .introduction {
   color: var(--txt);
-  padding: 5rem 0 2rem;
-  display: flex;
-  justify-content: space-around;
+  padding: 2rem 0 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr);
+  gap: 3rem;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .introductionText {
   display: flex;
   flex-direction: column;
   word-spacing: .2rem;
+}
 
-  .title {
-    font-size: 2.6rem;
-    text-align: center;
-  }
+.eyebrow {
+  margin-bottom: .85rem;
+  font-size: .95rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--txt-secondary);
+}
 
-  .description {
-    padding-top: 2.5rem;
-    font-size: 1.3rem;
-    text-align: left;
-    line-height: 1.8rem;
+.title {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.12;
+  text-align: left;
+}
 
-    p {
-      margin: 2rem;
-    }
-  }
+.description {
+  padding-top: 1.75rem;
+  font-size: 1.14rem;
+  text-align: left;
+  line-height: 1.9rem;
+}
+
+.description p + p {
+  margin-top: 1.2rem;
 }
 
 .purple {
   color: var(--txt-secondary);
 }
 
-.introSocial {
-  padding-top: 3rem;
-  text-align: center;
+.proofGrid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
 
-  h1 {
-    font-size: 2.5rem;
+.proofCard,
+.capabilityCard {
+  padding: 1.25rem;
+  border-radius: 1.15rem;
+  background: var(--bg-primary);
+  border: 1px solid rgba(156, 71, 245, 0.18);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+}
+
+.proofValue {
+  display: block;
+  margin-bottom: .45rem;
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--txt-secondary);
+}
+
+.proofLabel,
+.capabilityCard p {
+  line-height: 1.6rem;
+}
+
+.avatarCard {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: var(--bg-primary);
+  border: 1px solid rgba(156, 71, 245, 0.18);
+  box-shadow: 0 14px 40px var(--card-shadow);
+}
+
+.avatarCard img {
+  width: min(100%, 320px);
+  height: auto;
+}
+
+.capabilities {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.capabilityTitle {
+  margin-bottom: .7rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--txt);
+}
+
+.introSocial {
+  padding-top: 1rem;
+  text-align: center;
+  color: var(--txt);
+
+  h2 {
+    font-size: 2.25rem;
   }
+
   p {
-    margin-top: 1rem;
+    margin-top: .85rem;
     font-size: 1rem;
     text-align: center;
   }
@@ -60,15 +128,15 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
+  gap: 1rem;
+  padding-top: 1.5rem;
   padding-inline-start: 0;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .socialLink {
   display: inline-block;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .socialIcon {
@@ -76,18 +144,58 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 52px;
+  height: 52px;
   text-align: center;
   font-size: 1.5rem;
   line-height: 2rem;
   color: var(--social-icon);
-  background: hsla(0,0%,100%,.972);
+  background: var(--bg-primary);
+  border: 1px solid rgba(156, 71, 245, 0.18);
   border-radius: 50%;
   transition: .5s;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
 }
 
 .socialIcon:hover {
   transform: scale(1.1);
   box-shadow: 0 0 15px var(--social-shadow);
+}
+
+.contactLink {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-weight: 700;
+  color: var(--txt-secondary);
+}
+
+@media (max-width: 1024px) {
+  .introduction {
+    grid-template-columns: 1fr;
+  }
+
+  .proofGrid,
+  .capabilities {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .content {
+    padding: 1rem 1.5rem 4rem;
+  }
+
+  .proofGrid,
+  .capabilities {
+    grid-template-columns: 1fr;
+  }
+
+  .title,
+  .description {
+    text-align: center;
+  }
+
+  .eyebrow {
+    text-align: center;
+  }
 }

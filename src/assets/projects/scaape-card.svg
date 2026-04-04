@@ -1,0 +1,16 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#081826"/>
+  <circle cx="1044" cy="136" r="180" fill="#06B6D4" fill-opacity="0.3"/>
+  <circle cx="876" cy="570" r="230" fill="#8B5CF6" fill-opacity="0.15"/>
+  <circle cx="1092" cy="610" r="118" fill="#22C55E" fill-opacity="0.16"/>
+  <rect x="74" y="74" width="248" height="42" rx="21" fill="#0E2233" stroke="#67E8F9" stroke-opacity="0.65"/>
+  <text x="108" y="101" fill="#CFFAFE" font-size="18" font-weight="700" font-family="Quicksand, Arial, sans-serif">Consumer Mobile</text>
+  <text x="74" y="220" fill="#F8FAFC" font-size="74" font-weight="700" font-family="Quicksand, Arial, sans-serif">Scaape</text>
+  <text x="74" y="286" fill="#A5F3FC" font-size="34" font-weight="600" font-family="Quicksand, Arial, sans-serif">Social event discovery app</text>
+  <text x="74" y="364" fill="#D7F7FF" font-size="28" font-weight="500" font-family="Quicksand, Arial, sans-serif">Payments, real-time messaging, custom</text>
+  <text x="74" y="406" fill="#D7F7FF" font-size="28" font-weight="500" font-family="Quicksand, Arial, sans-serif">animations, and location-aware discovery.</text>
+  <rect x="74" y="486" width="170" height="52" rx="26" fill="#10273A" stroke="#67E8F9" stroke-opacity="0.45"/>
+  <text x="111" y="519" fill="#ECFEFF" font-size="22" font-weight="700" font-family="Quicksand, Arial, sans-serif">Razorpay</text>
+  <rect x="260" y="486" width="164" height="52" rx="26" fill="#10273A" stroke="#34D399" stroke-opacity="0.45"/>
+  <text x="301" y="519" fill="#DCFCE7" font-size="22" font-weight="700" font-family="Quicksand, Arial, sans-serif">Firebase</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#07111F"/>
+  <circle cx="1040" cy="112" r="188" fill="#2563EB" fill-opacity="0.35"/>
+  <circle cx="905" cy="585" r="225" fill="#22C55E" fill-opacity="0.14"/>
+  <circle cx="1095" cy="610" r="112" fill="#38BDF8" fill-opacity="0.12"/>
+  <rect x="74" y="74" width="268" height="42" rx="21" fill="#0F172A" stroke="#60A5FA" stroke-opacity="0.7"/>
+  <text x="104" y="101" fill="#E2E8F0" font-size="18" font-weight="700" font-family="Quicksand, Arial, sans-serif">Professional Work</text>
+  <text x="74" y="220" fill="#F8FAFC" font-size="74" font-weight="700" font-family="Quicksand, Arial, sans-serif">SiteMaster</text>
+  <text x="74" y="286" fill="#93C5FD" font-size="34" font-weight="600" font-family="Quicksand, Arial, sans-serif">Field operations platform</text>
+  <text x="74" y="364" fill="#CBD5E1" font-size="28" font-weight="500" font-family="Quicksand, Arial, sans-serif">React Native, React Query, Excel workflows,</text>
+  <text x="74" y="406" fill="#CBD5E1" font-size="28" font-weight="500" font-family="Quicksand, Arial, sans-serif">deep linking, and real-time coordination.</text>
+  <rect x="74" y="486" width="184" height="52" rx="26" fill="#111C2E" stroke="#38BDF8" stroke-opacity="0.45"/>
+  <text x="110" y="519" fill="#E0F2FE" font-size="22" font-weight="700" font-family="Quicksand, Arial, sans-serif">35% faster</text>
+  <rect x="278" y="486" width="172" height="52" rx="26" fill="#111C2E" stroke="#34D399" stroke-opacity="0.45"/>
+  <text x="320" y="519" fill="#D1FAE5" font-size="22" font-weight="700" font-family="Quicksand, Arial, sans-serif">5-dev team</text>
+</svg>

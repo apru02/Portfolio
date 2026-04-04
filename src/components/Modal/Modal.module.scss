@@ -18,6 +18,9 @@
   border: var(--modal-border);
   border-radius: .25rem;
   color: var(--txt);
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .closeWrapper {
@@ -59,9 +62,19 @@
   }
 }
 
-@media (max-height: 575px) {
-  .body {
-    overflow-y: scroll;
-    overflow-x: hidden;
+.body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+  /* styling to ensure nice scrollbars */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--tags);
+    border-radius: 4px;
   }
 }

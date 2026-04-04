@@ -10,14 +10,28 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ModalProjectCard = () => {
   const { id } = useParams();
-  const { image, title, links, technologies } = projects.find(
-    (p) => id === p.id,
-  );
+  const project = projects.find((p) => id === p.id);
   const { isVisible, toggleModal } = useModal();
 
   useEffect(() => {
     toggleModal();
   }, []);
+
+  if (!project) {
+    return null;
+  }
+
+  const {
+    image,
+    title,
+    tagline,
+    role,
+    summary,
+    impact,
+    highlights,
+    links,
+    technologies,
+  } = project;
 
   return (
     <Modal show={isVisible} onClose={toggleModal}>
@@ -33,6 +47,18 @@ const ModalProjectCard = () => {
 
         <div className={s.cardBody}>
           <h3 className={s.title}>{title}</h3>
+          {!!role && <p className={s.role}>{role}</p>}
+          {!!tagline && <p className={s.tagline}>{tagline}</p>}
+          {!!summary && <p className={s.summary}>{summary}</p>}
+          {!!impact && <p className={s.impact}>{impact}</p>}
+
+          {!!highlights?.length && (
+            <ul className={s.highlights}>
+              {highlights.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          )}
 
           <div className={s.technologies}>
             {technologies.map((tech, index) => (
@@ -41,29 +67,75 @@ const ModalProjectCard = () => {
           </div>
         </div>
 
-        <div className={s.cardFooter}>
-          {!!links.site && (
-            <Button
-              style={{ width: '12rem' }}
-              className="primary"
-              href={links.site}
-              target="_blank"
-            >
-              <BiLinkExternal /> &nbsp; View project
-            </Button>
-          )}
+        {(!!links.site || !!links.repo || !!links.testflight || !!links.project || !!links.playstore || !!links.appstore) && (
+          <div className={s.cardFooter}>
+            {links.site && (
+              <Button
+                style={{ width: '12rem' }}
+                className="primary"
+                href={links.site}
+                target="_blank"
+              >
+                <BiLinkExternal /> &nbsp; View site
+              </Button>
+            )}
 
-          {!!links.repo && (
-            <Button
-              style={{ width: '12rem' }}
-              className="primary"
-              href={links.repo}
-              target="_blank"
-            >
-              <BiLinkExternal /> &nbsp; Know more
-            </Button>
-          )}
-        </div>
+            {links.testflight && (
+              <Button
+                style={{ width: '12rem' }}
+                className="primary"
+                href={links.testflight}
+                target="_blank"
+              >
+                <BiLinkExternal /> &nbsp; View testflight
+              </Button>
+            )}
+
+            {links.playstore && (
+              <Button
+                style={{ width: '12rem' }}
+                className="primary"
+                href={links.playstore}
+                target="_blank"
+              >
+                <BiLinkExternal /> &nbsp; View playstore
+              </Button>
+            )}
+
+            {links.appstore && (
+              <Button
+                style={{ width: '12rem' }}
+                className="primary"
+                href={links.appstore}
+                target="_blank"
+              >
+                <BiLinkExternal /> &nbsp; View appstore
+              </Button>
+            )}
+
+            {links.project && (
+              <Button
+                style={{ width: '12rem' }}
+                className="primary"
+                href={links.project}
+                target="_blank"
+              >
+                <BiLinkExternal /> &nbsp; View project
+              </Button>
+            )}
+
+            {links.repo && (
+              <Button
+                style={{ width: '12rem' }}
+                className="primary"
+                href={links.repo}
+                target="_blank"
+              >
+                <BiLinkExternal /> &nbsp; View source
+              </Button>
+            )}
+          </div>
+        )}
       </div>
     </Modal>
   );

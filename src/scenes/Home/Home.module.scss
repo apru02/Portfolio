@@ -1,0 +1,137 @@
+.section {
+  width: min(1200px, calc(100% - 6rem));
+  margin: 0 auto;
+  padding: 0 0 5rem;
+  color: var(--txt);
+}
+
+.sectionHeader {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  margin-bottom: .85rem;
+  font-size: .95rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--txt-secondary);
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.12;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.winsGrid,
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.infoCard,
+.projectCard {
+  padding: 1.4rem;
+  border-radius: 1.2rem;
+  background: var(--bg-primary);
+  border: 1px solid rgba(156, 71, 245, 0.18);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+}
+
+.infoCard h3,
+.projectTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.infoCard p,
+.projectDescription {
+  margin-top: .75rem;
+  line-height: 1.7;
+}
+
+.projectTagline {
+  margin-bottom: .6rem;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--txt-secondary);
+}
+
+.projectImpact {
+  margin-top: .85rem;
+  line-height: 1.7;
+  color: var(--txt-secondary);
+  font-weight: 600;
+}
+
+.projectTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+
+.projectTags span {
+  display: inline-flex;
+  align-items: center;
+  padding: .35rem .75rem;
+  border-radius: 999px;
+  background: var(--tags);
+  color: var(--tags-txt);
+  font-size: .78rem;
+  font-weight: 600;
+}
+
+.projectLink,
+.actionLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.1rem;
+  padding: .85rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(156, 71, 245, 0.22);
+  color: var(--txt);
+  background: rgba(156, 71, 245, 0.08);
+  font-weight: 600;
+  transition: transform .2s ease;
+}
+
+.projectLink:hover,
+.actionLink:hover {
+  transform: translateY(-2px);
+}
+
+.sectionAction {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 925px) {
+  .section {
+    width: min(100%, calc(100% - 4rem));
+    padding-bottom: 4rem;
+  }
+
+  .winsGrid,
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 625px) {
+  .section {
+    width: calc(100% - 3rem);
+  }
+}

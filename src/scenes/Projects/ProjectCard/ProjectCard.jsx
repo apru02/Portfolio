@@ -1,8 +1,15 @@
-import s from './ProjectCard.module.scss';
 import { Link, useLocation } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import s from './ProjectCard.module.scss';
 
-const ProjectCard = ({ id, image, title, description }) => {
+const ProjectCard = ({
+  id,
+  image,
+  title,
+  tagline,
+  description,
+  impact,
+}) => {
   const location = useLocation();
 
   return (
@@ -23,8 +30,10 @@ const ProjectCard = ({ id, image, title, description }) => {
         </Link>
 
         <div className={s.cardBody}>
+          {!!tagline && <p className={s.tagline}>{tagline}</p>}
           <h3 className={s.title}>{title}</h3>
           <p className={s.description}>{description}</p>
+          {!!impact && <p className={s.impact}>{impact}</p>}
         </div>
       </div>
     </li>

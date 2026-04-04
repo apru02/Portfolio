@@ -23,16 +23,56 @@
 .cardFooter {
   margin-top: 1rem;
   display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
   a:first-child {
-    margin-right: 2rem;
+    margin-right: 0;
   }
 }
 
 .title {
   margin-bottom: .75rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: center;
+}
+
+.role,
+.tagline {
+  text-align: center;
+  color: var(--txt-secondary);
+  font-weight: 600;
+}
+
+.tagline {
+  margin-top: .35rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-size: .9rem;
+}
+
+.summary,
+.impact {
+  margin-top: 1rem;
+  text-align: left;
+  line-height: 1.75;
+}
+
+.impact {
+  font-weight: 600;
+}
+
+.highlights {
+  margin: 1rem 0 1.25rem;
+  padding-left: 1rem;
+}
+
+.highlights li {
+  list-style: disc;
+  margin-bottom: .7rem;
+  line-height: 1.7;
 }
 
 .technologies {
@@ -54,4 +94,10 @@
   font-size: 80%;
   font-weight: 600;
   color: var(--tags-txt);
+}
+
+@media (max-width: 640px) {
+  .cardFooter {
+    justify-content: center;
+  }
 }
