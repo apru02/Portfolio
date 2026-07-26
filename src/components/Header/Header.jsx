@@ -15,13 +15,13 @@ const Header = ({ children }) => {
   }, []);
 
   return (
-    <div
+    <header
       className={cx(s.header, {
         [s.highlighted]: headerHighlight,
       })}
     >
       <div className={s.container}>{children}</div>
-    </div>
+    </header>
   );
 };
 

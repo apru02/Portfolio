@@ -9,9 +9,10 @@ const placeholder =
 const data = [
   {
     id: '1',
+    slug: 'sitemaster-react-native-case-study',
     title: 'SiteMaster - Construction & Interior Project Management Platform',
     tagline: 'Full-stack product engineering',
-    role: 'Software Engineer | Jul 2025 - Present',
+    role: 'Software Engineer | Current',
     description:
       'Built end-to-end workflows across frontend and backend for field teams handling updates, approvals, procurement, and operational data at scale.',
     impact:
@@ -48,6 +49,7 @@ const data = [
   },
   {
     id: '2',
+    slug: 'heshel-ai-mobile-app',
     title: 'Heshel AI',
     tagline: 'AI-powered cooking companion',
     role: 'Product project | 2026',
@@ -82,6 +84,7 @@ const data = [
   },
   {
     id: '3',
+    slug: 'scaape-react-native-event-app',
     title: 'Scaape Event Platform',
     tagline: 'Social event discovery app',
     role: 'Mobile product | Jan 2025 - Apr 2025',
@@ -116,6 +119,7 @@ const data = [
   },
   {
     id: '4',
+    slug: 'predictive-crime-analysis',
     title: 'Predictive Crime Analysis',
     tagline: 'Data and machine learning case study',
     role: 'Datathon project | 2024',

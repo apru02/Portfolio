@@ -1,6 +1,6 @@
 {
-  "name": "Portfolio React Application",
-  "short_name": "React-Portfolio",
+  "name": "Apratim Dutta — React Native & Full-Stack Developer",
+  "short_name": "Apratim Dutta",
   "icons": [
     {
       "src": "/icons/48.png",
@@ -38,7 +38,7 @@
   "orientation": "portrait-primary",
   "background_color": "#000",
   "theme_color": "#181a27",
-  "description": "A simple Portfolio App, implementing a lot of PWA",
+  "description": "Portfolio of Apratim Dutta, a React Native and full-stack developer in Kolkata, India.",
   "dir": "ltr",
-  "lang": "en-US"
+  "lang": "en-IN"
 }

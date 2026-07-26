@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { routes } from '../../routes/RootRoutes';
+import { routes } from '../../routes/paths';
 import s from './Logo.module.scss';
 import mylogo from '../../assets/apratim_logo.png'
 const Logo = ({ className }) => {

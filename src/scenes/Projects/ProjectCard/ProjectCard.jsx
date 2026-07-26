@@ -1,26 +1,21 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import s from './ProjectCard.module.scss';
 
 const ProjectCard = ({
-  id,
+  slug,
   image,
   title,
   tagline,
   description,
   impact,
 }) => {
-  const location = useLocation();
-
   return (
     <li className={s.card}>
       <div className={s.cardWrapper}>
-        <Link
-          to={`/project/${id}`}
-          state={{ background: location }}
-        >
+        <Link to={`/projects/${slug}`}>
           <LazyLoadImage
-            alt="card-img"
+            alt={`${title} case study preview`}
             effect="blur"
             src={image.src}
             width="100%"

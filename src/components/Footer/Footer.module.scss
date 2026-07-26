@@ -15,7 +15,7 @@
   padding-top: 10px;
   padding-bottom: 8px;
 
-  h1 {
+  p {
     font-size: 1rem;
     color: var(--txt);
     margin-top: 0.5rem;
@@ -51,4 +51,17 @@
 
 .socialIcons {
   color: var(--txt)
+}
+
+.serviceLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .8rem;
+  color: var(--txt-secondary);
+  font-size: .85rem;
+}
+
+.serviceLinks a:hover {
+  text-decoration: underline;
 }

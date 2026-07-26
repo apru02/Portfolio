@@ -10,7 +10,7 @@ const BaseLayout = ({ children }) => {
         <MainNavigation />
       </Header>
 
-      <div className={s.container}>{children}</div>
+      <main className={s.container}>{children}</main>
 
       <Footer />
     </div>

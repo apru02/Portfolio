@@ -10,7 +10,7 @@ const HomeLayout = ({ children }) => {
         <MainNavigation />
       </Header>
 
-      {children}
+      <main>{children}</main>
 
       <Footer />
     </div>

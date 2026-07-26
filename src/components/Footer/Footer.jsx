@@ -8,10 +8,18 @@ const Footer = () => {
   // let year = date.getFullYear();
 
   return (
-    <div className={s.footer}>
+    <footer className={s.footer}>
       <div className={s.container}>
         <div className={s.copyright}>
-          <h1>Built and maintained by Apratim Dutta</h1>
+          <p>Built and maintained by Apratim Dutta</p>
+          <nav className={s.serviceLinks} aria-label="Development services">
+            <a href="/react-native-developer-kolkata">
+              React Native development
+            </a>
+            <a href="/web-app-developer-kolkata">
+              Web app development
+            </a>
+          </nav>
         </div>
 
         <div className={s.body}>
@@ -49,7 +57,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

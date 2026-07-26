@@ -1,4 +1,4 @@
-import aboutPromoImg from '../../assets/rb_4449.png';
+import aboutPromoImg from '../../assets/rb_4449.webp';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 import s from './About.module.scss';
 import AboutTextCard from './AboutTextCard/AboutTextCard';
@@ -12,13 +12,17 @@ const About = () => {
         <div className={s.about}>
           <div className={s.aboutDescription}>
             <h1 className={s.title}>
-              Learn More <b className={s.purple}>About Me</b>
+              About <b className={s.purple}>Apratim Dutta</b>
             </h1>
             <AboutTextCard />
           </div>
 
           <div className={s.aboutImg}>
-            <img src={aboutPromoImg} alt="about" style={{width:"85%"}} />
+            <img
+              src={aboutPromoImg}
+              alt="Apratim Dutta working across mobile and web product development"
+              style={{ width: '85%' }}
+            />
           </div>
         </div>
 

@@ -10,7 +10,7 @@ const proofPoints = [
   {
     value: 'Production ready',
     label:
-      'Building React Native and React features at SiteMaster since Feb 2024.',
+      'Building production React Native and React features at SiteMaster.',
   },
   {
     value: 'Real-time UX',
@@ -48,10 +48,10 @@ const IntroSection = () => {
       <div className={s.introduction}>
         <div className={s.introductionText}>
           {/* <p className={s.eyebrow}>Why teams hire me</p> */}
-          <h1 className={s.title}>
+          <h2 className={s.title}>
             I turn ambitious ideas into dependable
             <span className={s.purple}> product experiences</span>.
-          </h1>
+          </h2>
 
           <div className={s.description}>
             <p>

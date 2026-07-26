@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import projects from '../../data/projects';
 import MainSection from './MainSection/MainSection';
 import IntroSection from './IntroSection/IntroSection';
@@ -29,12 +29,54 @@ const recentWins = [
 ];
 
 const Home = () => {
-  const location = useLocation();
-
   return (
     <HomeLayout>
       <MainSection />
       <IntroSection />
+      <section className={s.section} aria-labelledby="services-title">
+        <div className={s.sectionHeader}>
+          <p className={s.eyebrow}>Based in Kolkata, working remotely</p>
+          <h2 className={s.title} id="services-title">
+            Mobile and web product development
+          </h2>
+          <p className={s.subtitle}>
+            End-to-end engineering for teams that need a dependable
+            React Native mobile app, a fast React web application, or
+            the APIs and integrations behind them.
+          </p>
+        </div>
+
+        <div className={s.winsGrid}>
+          <article className={s.infoCard}>
+            <h3>React Native app development</h3>
+            <p>
+              Cross-platform Android and iOS applications with Expo,
+              payments, notifications, deep links, real-time data, and
+              production delivery.
+            </p>
+            <Link
+              to="/react-native-developer-kolkata"
+              className={s.projectLink}
+            >
+              React Native development in Kolkata
+            </Link>
+          </article>
+          <article className={s.infoCard}>
+            <h3>React and full-stack web applications</h3>
+            <p>
+              Responsive product interfaces, scalable APIs, workflow
+              automation, performance improvements, and AI-assisted
+              features.
+            </p>
+            <Link
+              to="/web-app-developer-kolkata"
+              className={s.projectLink}
+            >
+              Web app development in Kolkata
+            </Link>
+          </article>
+        </div>
+      </section>
       {/* <section className={s.section}>
         <div className={s.sectionHeader}>
           <p className={s.eyebrow}>Selected wins</p>
@@ -87,8 +129,7 @@ const Home = () => {
               </div>
 
               <Link
-                to={`/project/${project.id}`}
-                state={{ background: location }}
+                to={`/projects/${project.slug}`}
                 className={s.projectLink}
               >
                 Open case study

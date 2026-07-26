@@ -1,0 +1,50 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/project/1",
+      "destination": "/projects/sitemaster-react-native-case-study",
+      "permanent": true
+    },
+    {
+      "source": "/project/2",
+      "destination": "/projects/heshel-ai-mobile-app",
+      "permanent": true
+    },
+    {
+      "source": "/project/3",
+      "destination": "/projects/scaape-react-native-event-app",
+      "permanent": true
+    },
+    {
+      "source": "/project/4",
+      "destination": "/projects/predictive-crime-analysis",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}

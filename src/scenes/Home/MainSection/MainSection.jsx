@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import handIcon from '../../../assets/hand.png';
 import homeMainIcon from '../../../assets/home-main.svg';
 import Typewriter from '../../../components/UIElements/Typewriter/Typewriter';
-import { routes } from '../../../routes/RootRoutes';
+import { routes } from '../../../routes/paths';
 import s from './MainSection.module.scss';
 
 const proofPoints = [
@@ -33,19 +33,17 @@ const MainSection = () => {
         </div>
 
         <h1 className={s.mainTitle}>
-          I build
-          <strong className={s.mainName}>
-            {' '}
-            polished mobile and web products
-          </strong>{' '}
-          that ship fast and scale cleanly.
+          I&apos;m
+          <strong className={s.mainName}> Apratim Dutta</strong> — a
+          React Native and full-stack developer in Kolkata.
         </h1>
 
         <p className={s.lead}>
-          I&apos;m Apratim Dutta, a software engineer building
-          high-quality experiences across React Native, React,
-          Node.js, and AI-assisted product flows for startups and
-          fast-moving teams.
+          I build production mobile apps, React web applications,
+          APIs, and AI-assisted products for startups and fast-moving
+          teams. I&apos;m an Information Technology graduate of IIEST
+          Shibpur with hands-on experience shipping to Google Play and
+          the Apple App Store.
         </p>
 
         <div className={s.typewriter}>
